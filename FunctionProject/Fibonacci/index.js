@@ -9,19 +9,22 @@ module.exports = async function (context, req) {
 
     if (nth < 0)
         throw 'must be greater than 0'
-    else if (nth === 0)
-        answer = nth_2
-    else if (nth === 1)
-        answer = nth_1
     else {
-        for (var i = 0; i < nth - 1; i++) {
-            answer = nth_2.add(nth_1)
-            nth_2 = nth_1
-            nth_1 = answer
-        }
+        answer = fibonacciF(nth);
     }
 
     context.res = {
         body: answer.toString()
     };
 }
+
+var memorizacion = {0:bigInt.zero, 1:bigInt.one};
+function fibonacciF (nth){
+    if (nth in Object.keys(memorizacion)){
+        return memorizacion[nth];
+    } else {
+        memorizacion [nth] = fibonacciF(nth - 1).add(fibonacciF(nth - 2));
+        return memorizacion[nth];
+    }
+}
+
