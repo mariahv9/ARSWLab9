@@ -70,12 +70,59 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 **Preguntas**
 
 * ¿Qué es un Azure Function?
+
+le permite ejecutar pequeños fragmentos de código (llamados "funciones") sin preocuparse por la infraestructura de la aplicación. Con Azure Functions, la infraestructura en la nube proporciona todos los servidores actualizados que necesita para mantener su aplicación funcionando a escala.
+
 * ¿Qué es serverless?
+
+La computación sin servidor (o serverless para abreviar) es un modelo de ejecución en el que el proveedor en la nube (AWS, Azure o Google Cloud) es responsable de ejecutar un fragmento de código mediante la asignación dinámica de los recursos. Y cobrando solo por la cantidad de recursos utilizados para ejecutar el código. El código, generalmente, se ejecuta dentro de contenedores sin estado que pueden ser activados por una variedad de eventos que incluyen solicitudes HTTP, eventos de base de datos, servicios de colas, alertas de monitoreo, carga de archivos, eventos programados (trabajos cron), etc. 
+
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?
+
+Proporciona una nueva forma para que los clientes aprovechen el modelo de programación de Funciones en las instalaciones. Construido sobre las mismas raíces de código abierto en las que se basa el servicio Azure Functions, Azure Functions Runtime se puede implementar en las instalaciones y proporciona una experiencia de desarrollo casi similar a la del servicio en la nube.
+
+- Aproveche la potencia informática no utilizada: proporciona una forma económica para que los clientes realicen determinadas tareas, como aprovechar la potencia informática de las PC locales para ejecutar procesos por lotes durante la noche, aprovechar los dispositivos en el piso para enviar datos condicionalmente a la nube, etc.
+- Prepare sus activos de código para el futuro: los clientes que quieran experimentar las funciones como servicio incluso antes de comprometerse con la nube, también encontrarán este tiempo de ejecución muy útil. Los activos de código que crean en las instalaciones se pueden traducir fácilmente a la nube cuando finalmente se muevan.
+
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
+
+Contiene todos los objetos de datos de Azure Storage: blobs, archivos, colas, tablas y discos. La cuenta de almacenamiento proporciona un espacio de nombres único para sus datos de Azure Storage al que se puede acceder desde cualquier lugar del mundo a través de HTTP o HTTPS. Los datos de su cuenta de almacenamiento de Azure son duraderos y de alta disponibilidad, seguros y escalables de forma masiva.
+
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
+
+- Plan de consumo: Cuando se usa el plan de consumo, las instancias del host de Azure Functions se agregan y quitan de forma dinámica según el número de eventos entrantes.
+
+El plan de consumo es el plan de hospedaje predeterminado y ofrece las siguientes ventajas:
+
+* Pague solo cuando se ejecutan las funciones
+* Escale horizontalmente de forma automática, incluso durante períodos de gran carga
+
+- Plan premium: Cuando se usa el plan Prémium, las instancias del host de Azure Functions se agregan y quitan según el número de eventos entrantes al igual que con el plan de consumo.
+
+El plan Prémium admite las características siguientes:
+
+* Instancias permanentemente semiactivas para evitar cualquier inicio en frío
+* Conectividad de red virtual
+* Duración de la ejecución ilimitada (60 minutos garantizados)
+* Tamaños de la instancia Prémium (un núcleo, dos núcleos y cuatro instancias de núcleo)
+* Precios más previsibles
+* Asignación de aplicaciones de alta densidad para planes con varias aplicaciones de funciones
+
+- Plan dedicado: Sus aplicaciones de funciones también pueden ejecutarse en las mismas máquinas virtuales dedicadas que otras aplicaciones de App Service (SKU básica, estándar, prémium y aislada).
+
+Considere el plan de App Service en las situaciones siguientes:
+
+* Tiene máquinas virtuales infrautilizadas que ya ejecutan otras instancias de App Service.
+* Quiere proporcionar una imagen personalizada en la que ejecutar sus funciones. 
+
 * ¿Por qué la memoization falla o no funciona de forma correcta?
+
+- Al ejecutar valores tan grandes la aplicación arrojo error debido a problemas de rango ya que excede el límite de recursión.
+
 * ¿Cómo funciona el sistema de facturación de las Function App?
+
+Está dada por el consumo de recursos y por la cantidad y tiempo de las ejeciones efectuadas.
+
 * Informe
 
 Realizamos la instalación de newman en nuestra máquina y ejecutamos el comando.
@@ -130,6 +177,14 @@ Se puede observar que los tiempos de ejecución son similares y durante la ejecu
 
 ![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/new.png)
 
+
+## Referencias
+
+![Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+![Serverless](https://serverless-stack.com/chapters/es/what-is-serverless.html)
+![Runtime](https://azure.microsoft.com/es-es/blog/introducing-azure-functions-runtime-preview/)
+![Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+![Tipos de planes](https://docs.microsoft.com/es-es/azure/azure-functions/functions-scale)
 
 ## Construido con 
 
