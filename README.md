@@ -180,11 +180,11 @@ Se puede observar que los tiempos de ejecución son similares y durante la ejecu
 
 ## Referencias
 
-![Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
-![Serverless](https://serverless-stack.com/chapters/es/what-is-serverless.html)
-![Runtime](https://azure.microsoft.com/es-es/blog/introducing-azure-functions-runtime-preview/)
-![Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
-![Tipos de planes](https://docs.microsoft.com/es-es/azure/azure-functions/functions-scale)
+[Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+[Serverless](https://serverless-stack.com/chapters/es/what-is-serverless.html)
+[Runtime](https://azure.microsoft.com/es-es/blog/introducing-azure-functions-runtime-preview/)
+[Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+[Tipos de planes](https://docs.microsoft.com/es-es/azure/azure-functions/functions-scale)
 
 ## Construido con 
 
