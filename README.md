@@ -37,7 +37,35 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
 
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/postman.png)
+
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
+
+**Función Memorizada**
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/memoF.png)
+
+* Ejecución Inicial con valor 10
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/inicio10.png)
+
+* Ejecución Final con valor 10
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/fin10.png)
+
+* Ejecución Inicial con valor 30
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/inicio30.png)
+
+* Ejecución Final con valor 30
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/fin30.png)
+
+* Diagrama de la ejecución memorizada
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/memomemo.png)
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/ejecucionMemo.png)
 
 **Preguntas**
 
@@ -49,3 +77,75 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 * ¿Por qué la memoization falla o no funciona de forma correcta?
 * ¿Cómo funciona el sistema de facturación de las Function App?
 * Informe
+
+Realizamos la instalación de newman en nuestra máquina y ejecutamos el comando.
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/proof1.png)
+
+**Resultados**
+
+* Primera Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/1.png)
+
+* Segunda Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/2.png)
+
+* Tercera Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/3.png)
+
+* Cuarta Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/4.png)
+
+* Quinta Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/5.png)
+
+* Sexta Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/6.png)
+
+* Séptima Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/7.png)
+
+* Octava Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/8.png)
+
+* Novena Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/9.png)
+
+* Décima Ejecución
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/10.png)
+
+Se puede observar que los tiempos de ejecución son similares y durante la ejecución no hubo errores.
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/10est.png)
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/new.png)
+
+![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/ejecuciones.png)
+
+## Construido con 
+
+* [Javascript](https://www.javascript.com/)
+* [Postman](https://www.postman.com/) 
+* [Azure Microsoft](https://azure.microsoft.com/) 
+
+## Reviewed
+
+Diego Alfonso Prieto Torres
+
+## Authors
+
+* **Alan Yesid Marin Mendez** - [PurpleBooth](https://github.com/Elan-MarMEn)
+* **Maria Fernanda Hernandez Vargas** - [PurpleBooth](https://github.com/mariahv9)
+
+
+Students of Systems Engineering of Escuela Colombiana de Ingenieria Julio Garavito 
