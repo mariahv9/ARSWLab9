@@ -130,7 +130,6 @@ Se puede observar que los tiempos de ejecución son similares y durante la ejecu
 
 ![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/new.png)
 
-![](https://github.com/mariahv9/ARSWLab9/blob/main/resources/ejecuciones.png)
 
 ## Construido con 
 
